@@ -34,7 +34,7 @@
     <body>
         <!-- ヘッダー -->
         <header class="header">
-            <div class="header__inner">
+            <div class="header__inner container">
                 <h1 class="header__logo">
                     <a href="/">
                         <img class="header__logo-img" src="assets/image/header/logo.svg" alt="Kirameki Farm">
@@ -62,7 +62,18 @@
         <main class="main">
             <!-- 持続可能な農業を目指す -->
             <section class="aim">
-
+                <div class="aim__inner container">
+                    <div class="aim__body">
+                        <h2 class="aim__title">持続可能な農業を目指す</h2>
+                        <p class="aim__text">キラメキファームは革新的デザインの農業機器で未来の農業を実現。ビッグデータ・自動運転ロボット・リジェネラティブ農業で環境に優しい効率化を目指す。</p>
+                    </div>
+                    <!-- /.aim__body -->
+                    <picture class="aim__image">
+                        <source media="(min-width: 768px)" srcset="assets/image/top/aim/aim_pc.png">
+                        <img src="assets/image/top/aim/aim_sp.png" alt="" class="aim__img">
+                    </picture>
+                </div>
+                <!-- /.aim__inner -->
             </section>
 
             <!-- 私たちについて -->
@@ -95,6 +106,10 @@
         <footer class="footer">
 
         </footer>
+
+                <!-- jQuery -->
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
         <script src="assets/script/main.js"></script>
     </body>
