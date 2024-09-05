@@ -30,7 +30,39 @@ html {
 ------------------------------------------ */
 .container {
 	width: 91.7949vw;
+    max-width: 1176px;
 	margin: auto;
+}
+
+/* セクションタイトル */
+.section-title {
+    text-align: center;
+}
+
+.section-title--en {
+    font-size: 16px;
+    color: #168352;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; /* SemiBold */
+    margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+    .section-title--en {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.section-title--ja {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .section-title--ja {
+        font-size: 28px;
+    }
 }
 
 /* ヘッダー
@@ -43,18 +75,39 @@ html {
 	height: 63px;
 }
 
-.header__logo {
-    width: 197px;
-}
-
-.header__hamburger-btn {
-    width: 24px;
+@media (min-width: 768px) {
+    .header {
+        height: 114px;
+    }
 }
 
 .header__inner {
 	display: flex;
 	justify-content: space-between;
+    align-items: center;
     height: 100%;
+}
+
+.header__logo {
+    width: 197px;
+    line-height: 0;
+}
+
+@media (min-width: 768px) {
+    .header__logo {
+        width: 263px;
+    }
+}
+
+/* ハンバーガーボタン */
+.header__hamburger-btn {
+    width: 24px;
+}
+
+@media (min-width: 768px) {
+	.header__hamburger-btn {
+		display: none;
+	}
 }
 
 /* ヘッダーメニュー */
@@ -63,10 +116,10 @@ html {
 		position: fixed;
 		top: 63px;
         width: 91.7949vw;
-		background-color: #168352;
+        background-color: #168352;
         border-radius: 24px;
-        opacity: 0;
         transition: all .6s;
+        opacity: 0;
         visibility: hidden;
 	}
 
@@ -90,4 +143,114 @@ html {
         font-weight: bold;
         color: #fff;
 	}
+}
+
+@media (min-width: 768px) {
+    .header__nav-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header__nav-item:first-child {
+        display: none;
+    }
+
+    .header__nav-item a {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+    }
+}
+
+/* 持続可能な農業を目指す
+------------------------------------------ */
+.aim {
+    margin-top: 22px;
+}
+
+@media (min-width: 768px) {
+    .aim {
+        margin-top: 55px;
+    }
+}
+
+.aim__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+@media (min-width: 768px) {
+    .aim__inner {
+        gap: 64px;
+    }
+}
+
+.aim__body {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+@media (min-width: 768px) {
+    .aim__body {
+        flex-direction: row;
+        gap: 9.357vw;
+    }
+}
+
+.aim__title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .aim_title {
+        font-size: 40px;
+        flex: 1;
+    }
+}
+
+.aim__text {
+    font-size: 15px;
+}
+
+@media (min-width: 768px) {
+    .aim__text {
+        flex: 1;
+    }
+}
+
+.aim__img {
+    width: 100%;
+}
+
+/* 私たちについて
+------------------------------------------ */
+.about {
+    margin-top: 56px;
+}
+
+.about__content {
+    position: relative;
+}
+
+.about__text-wrapper {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 100;
+}
+
+/* .about__text {
+    position: relative;
+} */
+
+.about__image {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.about__img {
+    width: 100%;
 }
