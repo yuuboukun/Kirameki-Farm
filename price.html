@@ -60,17 +60,43 @@
 
         <!-- メイン -->
         <main class="main">
+            <section class="price-head">
+                <picture class="price-head__image">
+                    <source media="(min-width: 768px)" srcset="assets/image/products/mainVisual_pc.png">
+                    <img src="assets/image/products/mainVisual_sp.png" alt="" class="price-head__img">
+                </picture>
+                <h2 class="price-head__title">価格・スペック</h2>
+                <ul class="price-head__breadcrumb">
+                    <li class="price-head__breadcrumb-list"><a href="/">トップ</a></li>
+                    <li class="price-head__arrow"><i class="bi bi-chevron-right"></i></li>
+                    <li class="price-head__breadcrumb-list"><a href="/price">価格・スペック</a></li>
+                </ul>
+            </section>
 
+            <section class="price-gallery">
+                <h3 class="price-section__title">
+                    <span class="price-section__txt">ギャラリー</span>
+                    <img src="assets/image/products/bar.png" alt="" class="price-section__underline">
+                </h3>
+                <picture class="price-gallery__image">
+                    <source media="(min-width: 768px)" srcset="assets/image/products/gallery_pc.png">
+                    <img src="assets/image/products/gallery_sp.png" alt="" class="price-gallery__img">
+                </picture>
+            </section>
         </main>
 
         <!-- フッター -->
         <footer class="footer">
-
+            <ul class="footer__nav">
+                <li class="footer__link"><a href="/price">価格・スペック</a></li>
+                <li class="footer__border"><img src="assets/image/footer/border.png" alt="区切り線"></li>
+                <li class="footer__link"><a href="/faq">よくあるご質問</a></li>
+            </ul>
         </footer>
 
-                <!-- jQuery -->
-                <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
         <script src="assets/script/main.js"></script>
     </body>
