@@ -197,6 +197,8 @@ html {
     .aim__body {
         flex-direction: row;
         gap: 9.357vw;
+        max-width: 1100px;
+        margin: auto;
     }
 }
 
@@ -272,12 +274,6 @@ html {
 .about__text {
     font-size: 15px;
     line-height: 2;
-}
-
-@media (min-width: 768px) {
-    .about__text {
-
-    }
 }
 
 .about__text--emphasis {
@@ -434,11 +430,19 @@ html {
 @media (min-width: 768px) {
     .service__item {
         width: calc((100% - 80px) / 3);
+        padding-left: 24px;
+        padding-right: 23px;
+        gap: 20px;
     }
 
     .service__item--drone,
     .service__item--harvest {
         width: calc((100% - 40px) / 2);
+        padding-left: 32px;
+        padding-right: 115px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        gap: 30px;
     }
 }
 
@@ -448,13 +452,33 @@ html {
 }
 
 @media (min-width: 768px) {
+    .service__img {
+        width: 110px;
+        height: 110px;
+    }
 
+    .service__img--drone,
+    .service__img--harvest {
+        width: 133px;
+        height: 133px;
+    }
 }
 
 .service__caption {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
+}
+
+@media (min-width: 768px) {
+    .service__caption {
+        font-size: 20px;
+    }
+
+    .service__caption--drone,
+    .service__caption--harvest {
+        font-size: 24px;
+    }
 }
 
 /* お客様の事例紹介
@@ -484,6 +508,10 @@ html {
         flex-direction: row;
         max-width: 1168px;
     }
+
+    .case__item {
+        flex: 1;
+    }
 }
 
 .case__img {
@@ -502,3 +530,51 @@ html {
         font-size: 19px;
     }
 }
+
+/* お知らせ
+------------------------------------------ */
+.news {
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.news__content {
+    margin-top: 24px;
+}
+
+.news__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.news__header {
+    display: flex;
+    gap: 20px;
+}
+
+.news__date {
+    font-size: 15px;
+    color: #222;
+}
+
+.news__category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #fff;
+    background-color: #473221;
+    width: 134px;
+    height: 28px;
+}
+
+.news__text {
+    font-size: 15px;
+    color: #09947b;
+}
+
+/* フッター
+------------------------------------------ */
