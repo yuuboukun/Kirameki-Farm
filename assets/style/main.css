@@ -389,7 +389,7 @@ html {
     margin-top: 24px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1100px) {
     .service__content {
         max-width: 1100px;
         flex-direction: row;
@@ -401,7 +401,7 @@ html {
 
 .service__item {
     display: flex;
-    gap: 18px;
+    gap: 4.6154vw;
     justify-content: flex-start;
     align-items: center;
     background-color: #168352;
@@ -409,11 +409,10 @@ html {
     padding-top: 20px;
     padding-right: 37px;
     padding-bottom: 20px;
-    padding-left: 24px;
+    padding-left: 6.153846vw;
 }
 
 .service__item--drone {
-    /* gap: 17px; */
     gap: 4.359vw;
     padding-right: 55px;
     padding-left: 6.3816vw;
@@ -424,10 +423,10 @@ html {
 }
 
 .service__item--grow {
-    gap: 20px;
+    gap: 5.128205vw;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1100px) {
     .service__item {
         width: calc((100% - 80px) / 3);
         padding-left: 24px;
@@ -451,7 +450,7 @@ html {
     height: 100px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1100px) {
     .service__img {
         width: 110px;
         height: 110px;
@@ -470,7 +469,7 @@ html {
     color: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1100px) {
     .service__caption {
         font-size: 20px;
     }
@@ -547,6 +546,7 @@ html {
 
 .news__content {
     margin-top: 24px;
+    border-top: 1px solid #ddd;
 }
 
 @media (min-width: 768px) {
@@ -562,6 +562,7 @@ html {
     gap: 16px;
     padding-top: 16px;
     padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
 }
 
 @media (min-width: 768px) {
@@ -669,6 +670,7 @@ html {
 .footer__border {
     height: 20px;
     width: 1px;
+    background-color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -676,4 +678,180 @@ html {
         height: 24px;
         width: 1px;
     }
+}
+
+/* ------------------------------------------
+価格・スペック
+------------------------------------------ */
+
+/* プライスの部品
+------------------------------------------ */
+
+.price-section__underline {
+    display: block;
+    height: 3px;
+    background: linear-gradient(to right, #168352 13.96648%, #ddd 13.96648%);
+}
+
+@media (min-width: 768px) {
+    .price-section__underline {
+        height: 5px;
+        background: linear-gradient(to right, #168352 12.5%, #ddd 12.5%);
+    }
+}
+
+/* プライスのヘッド
+------------------------------------------ */
+.price-head {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .price-head {
+        margin-top: 40px;
+    }
+
+    .price-head__inner {
+        max-width: 1200px;
+    }
+
+    .price-head__wrap {
+        position: relative;
+    }
+}
+
+.price-head__img {
+    width: 100%;
+}
+
+.price-head__title {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .price-head__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -1px;
+        bottom: -1px;
+        margin: 0;
+        width: 327px;
+        height: 113px;
+        background-color: #fff;
+        font-size: 36px;
+        border-top-right-radius: 40px;
+    }
+}
+
+.price-head__breadcrumb {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .price-head__breadcrumb {
+        margin-top: 24px;
+    }
+}
+
+.price-head__breadcrumb-list a {
+    color: #000;
+}
+
+/* プライスのギャラリー
+------------------------------------------ */
+.price-gallery {
+    margin-top: 40px;
+}
+
+@media (min-width: 768px)  {
+    .price-gallery {
+        margin-top: 64px;
+    }
+}
+
+.price-section__txt {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+    .price-section__txt {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+}
+
+.price-gallery__image {
+    display: block;
+    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .price-gallery__image {
+        margin-top: 32px;
+    }
+}
+
+.price-gallery__img {
+    width: 100%;
+}
+
+/* プライスの特徴
+------------------------------------------ */
+.price-feature {
+    margin-top: 64px;
+}
+
+@media (min-width: 768px) {
+    .price-feature {
+        margin-top: 72px;
+    }
+
+    .price-feature__inner{
+        max-width: 800px;
+    }
+}
+
+.price-feature__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .price-feature__content {
+        flex-direction: row;
+        margin-top: 32px;
+        gap: 31px;
+    }
+
+    .price-feature__item {
+        width: calc((100% - 62px) / 3);
+    }
+}
+
+.price-feature__img {
+    width: 100%;
+}
+
+.price-feature__txt {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* メーカー希望小売価格
+------------------------------------------ */
+.price-retail {
+    margin-top: 72px;
 }

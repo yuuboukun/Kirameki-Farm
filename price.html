@@ -61,27 +61,91 @@
         <!-- メイン -->
         <main class="main">
             <section class="price-head">
-                <picture class="price-head__image">
-                    <source media="(min-width: 768px)" srcset="assets/image/products/mainVisual_pc.png">
-                    <img src="assets/image/products/mainVisual_sp.png" alt="" class="price-head__img">
-                </picture>
-                <h2 class="price-head__title">価格・スペック</h2>
-                <ul class="price-head__breadcrumb">
-                    <li class="price-head__breadcrumb-list"><a href="/">トップ</a></li>
-                    <li class="price-head__arrow"><i class="bi bi-chevron-right"></i></li>
-                    <li class="price-head__breadcrumb-list"><a href="/price">価格・スペック</a></li>
-                </ul>
+                <div class="price-head__inner container">
+                    <div class="price-head__wrap">
+                        <picture class="price-head__image">
+                            <source media="(min-width: 768px)" srcset="assets/image/products/mainVisual_pc.png">
+                            <img src="assets/image/products/mainVisual_sp.png" alt="" class="price-head__img">
+                        </picture>
+                        <h2 class="price-head__title">価格・スペック</h2>
+                    </div>
+                    <!-- /.price-head__wrap -->
+                    <ul class="price-head__breadcrumb">
+                        <li class="price-head__breadcrumb-list"><a href="/">トップ</a></li>
+                        <li class="price-head__arrow"><i class="bi bi-chevron-right"></i></li>
+                        <li class="price-head__breadcrumb-list"><a href="/price">価格・スペック</a></li>
+                    </ul>
+                </div>
+                <!-- /.price-head__inner container -->
             </section>
 
             <section class="price-gallery">
-                <h3 class="price-section__title">
-                    <span class="price-section__txt">ギャラリー</span>
-                    <img src="assets/image/products/bar.png" alt="" class="price-section__underline">
-                </h3>
-                <picture class="price-gallery__image">
-                    <source media="(min-width: 768px)" srcset="assets/image/products/gallery_pc.png">
-                    <img src="assets/image/products/gallery_sp.png" alt="" class="price-gallery__img">
-                </picture>
+                <div class="price-gallery__inner container">
+                    <h3 class="price-section__title">
+                        <span class="price-section__txt">ギャラリー</span>
+                        <span class="price-section__underline"></span>
+                    </h3>
+                    <picture class="price-gallery__image">
+                        <source media="(min-width: 768px)" srcset="assets/image/products/gallery_pc.png">
+                        <img src="assets/image/products/gallery_sp.png" alt="" class="price-gallery__img">
+                    </picture>
+                </div>
+                <!-- /.price-head__inner container -->
+            </section>
+
+            <section class="price-feature">
+                <div class="price-feature__inner container">
+                    <h3 class="price-section__title">
+                        <span class="price-section__txt">特徴</span>
+                        <span class="price-section__underline"></span>
+                    </h3>
+                    <div class="price-feature__content">
+                        <div class="price-feature__item">
+                            <picture class="price-feature__image">
+                                <source media="(min-width: 768px)" srcset="assets/image/products/feature01_pc.png">
+                                <img src="assets/image/products/feature01_sp.png" alt="" class="price-feature__img">
+                            </picture>
+                            <p class="price-feature__txt">
+                                自動操縦が可能で、短時間で大量の農作物を監視、収穫、播種、散布などの作業ができます。
+                            </p>
+                        </div>
+                        <!-- /.price-feature__item -->
+                        <div class="price-feature__item">
+                            <picture class="price-feature__image">
+                                <source media="(min-width: 768px)" srcset="assets/image/products/feature02_pc.png">
+                                <img src="assets/image/products/feature02_sp.png" alt="" class="price-feature__img">
+                            </picture>
+                            <p class="price-feature__txt">
+                                高精度のカメラやセンサーを搭載しており、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。
+                            </p>
+                        </div>
+                        <!-- /.price-feature__item -->
+                        <div class="price-feature__item">
+                            <picture class="price-feature__image">
+                                <source media="(min-width: 768px)" srcset="assets/image/products/feature03_pc.png">
+                                <img src="assets/image/products/feature03_sp.png" alt="" class="price-feature__img">
+                            </picture>
+                            <p class="price-feature__txt">
+                                必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の過剰使用が抑えられ、環境負荷やコスト削減に繋がります。
+                            </p>
+                        </div>
+                        <!-- /.price-feature__item -->
+                    </div>
+                    <!-- /.price-feature__content -->
+                </div>
+                <!-- /.price-feature__inner container -->
+            </section>
+
+            <section class="price-retail">
+                <div class="price-retail__inner container">
+                    <h3 class="price-section__title">
+                        <span class="price-section__txt">メーカー希望小売価格</span>
+                        <span class="price-section__underline"></span>
+                    </h3>
+                    <div class="price-retail__price">
+                        ¥550,000<span class="price-retail__tax-included">（税込）</span>
+                    </div>
+                </div>
             </section>
         </main>
 
