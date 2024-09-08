@@ -855,3 +855,204 @@ html {
 .price-retail {
     margin-top: 72px;
 }
+
+@media (min-width: 768px) {
+    .price-retail__inner {
+        max-width: 800px;
+    }
+}
+
+.price-retail__price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 24px;
+}
+
+
+@media (min-width: 768px) {
+    .price-retail__price {
+        margin-top: 32px;
+    }
+}
+
+.price-retail__tax-included {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+}
+
+/* スペック
+------------------------------------------ */
+.price-spec__title {
+    font-size: 16px;
+    border-left: 2px solid #168352;
+    margin-top: 29px;
+    padding-left: 16px;
+    margin-bottom: 23px;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .price-spec__inner {
+        max-width: 800px;
+    }
+
+    .price-spec__wrap {
+        max-width: 741px;
+        margin: auto;
+    }
+
+    .price-spec__title {
+        font-size: 24px;
+        margin-top: 41px;
+        border-left-width: 3px;
+        margin-bottom: 33px;
+        line-height: 1.6667;
+    }
+}
+
+.price-spec__list {
+    border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+    .price-spec__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.price-spec__line {
+    height: 40px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .price-spec__line {
+        height: 64px;
+    }
+}
+
+.price-spec__line + .price-spec__line {
+    border-top: 1px solid #ddd;
+}
+
+.price-spec__label {
+    font-weight: bold;
+    background-color: #f5f5f5;
+}
+
+@media (min-width: 768px) {
+    .price-spec__label {
+        width: 26.991%;
+    }
+
+    .price-spec__value {
+        width: 73.009%;
+    }
+}
+
+/* カバー
+------------------------------------------ */
+.price-cover {
+    margin-top: 64px;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .price-cover {
+        margin-top: 72px;
+    }
+}
+
+.price-cover__img {
+    width: 100%;
+}
+
+.price-cover__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 358px;
+    height: 80px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+
+.price-cover__contact-btn {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* ------------------------------------------
+よくあるご質問
+------------------------------------------ */
+.faq {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .faq {
+        margin-top: 40px;
+    }
+
+    .faq__inner {
+        max-width: 1200px;
+    }
+
+    .faq__wrap {
+        position: relative;
+    }
+}
+
+.faq__img {
+    width: 100%;
+}
+
+.faq__title {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .faq__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -1px;
+        bottom: -1px;
+        margin: 0;
+        width: 327px;
+        height: 113px;
+        background-color: #fff;
+        font-size: 36px;
+        border-top-right-radius: 40px;
+    }
+}
+
+.faq__breadcrumb {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .faq__breadcrumb {
+        margin-top: 24px;
+    }
+}
+
+.faq__breadcrumb-list a {
+    color: #000;
+}

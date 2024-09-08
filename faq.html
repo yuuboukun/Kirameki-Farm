@@ -60,14 +60,31 @@
 
         <!-- メイン -->
         <main class="main">
-
+            <section class="faq">
+                <div class="faq__inner container">
+                    <div class="faq__wrap">
+                        <picture class="faq__image">
+                            <source media="(min-width: 768px)" srcset="assets/image/faq/mainVisual_pc.png">
+                            <img src="assets/image/faq/mainVisual_sp.png" alt="" class="faq__img">
+                        </picture>
+                        <h2 class="faq__title">よくあるご質問</h2>
+                    </div>
+                    <!-- /.faq__wrap -->
+                    <ul class="faq__breadcrumb">
+                        <li class="faq__breadcrumb-list"><a href="/">トップ</a></li>
+                        <li class="faq__arrow"><i class="bi bi-chevron-right"></i></li>
+                        <li class="faq__breadcrumb-list"><a href="/price">よくあるご質問</a></li>
+                    </ul>
+                </div>
+                <!-- /.faq__inner container -->
+            </section>
         </main>
 
         <!-- フッター -->
         <footer class="footer">
             <ul class="footer__nav">
                 <li class="footer__link"><a href="/price">価格・スペック</a></li>
-                <li class="footer__border"><img src="assets/image/footer/border.png" alt="区切り線"></li>
+                <li class="footer__border"></li>
                 <li class="footer__link"><a href="/faq">よくあるご質問</a></li>
             </ul>
         </footer>
