@@ -997,6 +997,7 @@ html {
 ------------------------------------------ */
 .faq {
     margin-top: 20px;
+    margin-bottom: 170px;
 }
 
 @media (min-width: 768px) {
@@ -1055,4 +1056,83 @@ html {
 
 .faq__breadcrumb-list a {
     color: #000;
+}
+
+/* アコーディオン */
+.faq__accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.faq__item {
+    padding: 24px 24px 24px 25px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
+
+.faq__question {
+    display: flex;
+}
+
+.faq__q-label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #168352;
+    padding-right: 16px;
+    line-height: 1;
+}
+
+.faq__about-wrap {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.faq__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 24px;
+    font-size: 11px;
+    color: #168352;
+    border: 1px solid #168352;
+    border-radius: 4px;
+}
+
+.faq__question-txt {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.faq__answer {
+    font-size: 16px;
+    padding-top: 16px;
+    display: none;
+}
+
+.faq__question .bi {
+    font-size: 33px;
+    line-height: 0;
+    transform: translateY(-5px);
+}
+
+.bi-dash {
+    display: none;
+}
+
+.bi-plus {
+    display: block;
+}
+
+.bi-dash.replace {
+    display: block;
+}
+
+.bi-plus.replace {
+    display: none;
 }
