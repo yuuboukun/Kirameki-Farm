@@ -810,7 +810,7 @@ html {
     .footer__border {
         height: 1.5rem;
         width: 0.0625rem;
-        margin-right: 0.0625rem; */
+        margin-right: 0.0625rem;
     }
 
     .footer__faq {
@@ -863,8 +863,8 @@ html {
 }
 
 .price-head__title {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 22px;
+    margin-bottom: 23px;
     font-size: 30px;
     font-weight: bold;
 }
@@ -890,6 +890,7 @@ html {
     display: flex;
     justify-content: flex-end;
     font-size: 12px;
+    transform: translateX(1px);
 }
 
 @media (min-width: 768px) {
@@ -902,10 +903,15 @@ html {
     color: #000;
 }
 
+.price-head__arrow {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
 /* プライスのギャラリー
 ------------------------------------------ */
 .price-gallery {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 @media (min-width: 768px)  {
@@ -918,7 +924,7 @@ html {
     display: block;
     font-size: 22px;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 @media (min-width: 768px) {
@@ -946,7 +952,7 @@ html {
 /* プライスの特徴
 ------------------------------------------ */
 .price-feature {
-    margin-top: 64px;
+    margin-top: 56px;
 }
 
 @media (min-width: 768px) {
@@ -963,7 +969,7 @@ html {
     display: flex;
     flex-direction: column;
     margin-top: 24px;
-    gap: 40px;
+    gap: 36px;
 }
 
 @media (min-width: 768px) {
@@ -983,15 +989,17 @@ html {
 }
 
 .price-feature__txt {
-    margin-top: 16px;
+    margin-top: 7px;
     font-size: 18px;
     font-weight: bold;
+    line-height: 1.72222;
 }
 
 /* メーカー希望小売価格
 ------------------------------------------ */
 .price-retail {
-    margin-top: 72px;
+    margin-top: 54px;
+    margin-bottom: 55px;
 }
 
 @media (min-width: 768px) {
@@ -1004,7 +1012,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 32px;
-    margin-top: 24px;
+    margin-top: 15px;
 }
 
 
@@ -1022,11 +1030,11 @@ html {
 /* スペック
 ------------------------------------------ */
 .price-spec__title {
-    font-size: 16px;
+    font-size: 20px;
     border-left: 2px solid #168352;
-    margin-top: 29px;
+    margin-top: 23px;
     padding-left: 16px;
-    margin-bottom: 23px;
+    margin-bottom: 18px;
     line-height: 1.5;
 }
 
@@ -1061,8 +1069,8 @@ html {
 }
 
 .price-spec__line {
-    height: 40px;
-    padding-left: 20px;
+    height: 38.9px;
+    padding-left: 19px;
     display: flex;
     align-items: center;
     font-size: 16px;
