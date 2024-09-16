@@ -16,15 +16,29 @@ $(window).on('resize', function () {
 });
 
 /**
- * アコーディオン
+ * faq_アコーディオン
  */
 $('.faq__question').on('click', function () {
-        // アンサーを選択
-        var answer = $(this).next();
+    // アンサーを選択
+    var answer = $(this).next();
 
-        // アンサーを表示非表示
-        answer.slideToggle();
+    // アンサーを表示非表示
+    answer.slideToggle();
 
-        // アイコンの入れ替え
-        $(this).find('.bi').toggleClass('replace');
+    // アイコンの入れ替え
+    $(this).find('.bi').toggleClass('replace');
 })
+
+/**
+ * price_ギャラリーのカルーセル
+ */
+var mySwiper = new Swiper('.swiper', {
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 1,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    speed: 1000,
+});
